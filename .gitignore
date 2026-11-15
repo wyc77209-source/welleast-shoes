@@ -1,0 +1,4 @@
+# local scratch: contains the original lineup photo and screenshots (not for publishing)
+work/
+.env
+*.key

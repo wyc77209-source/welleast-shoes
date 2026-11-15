@@ -1,0 +1,481 @@
+{
+  "_README": "EDIT THIS FILE to update the store. price: real price in USD (null = show examplePrice labeled 'Example price'). sizes: real size run. stock: integer or null (unknown). available: false hides the Order button. store.email / store.formspreeId: where orders go (see TODO).",
+  "store": {
+    "name": "Welleast Studio",
+    "email": "TODO-your-email@example.com",
+    "formspreeId": "",
+    "currency": "USD",
+    "shippingNote": {
+      "en": "Ships from New York. Shipping & returns terms: TODO.",
+      "zh": "纽约发货。运费与退换政策：待补充（TODO）。"
+    },
+    "line": {
+      "en": "Chunky Runner",
+      "zh": "老爹厚底跑鞋"
+    }
+  },
+  "products": [
+    {
+      "id": "CW01",
+      "sku": "TODO-SKU-01",
+      "colorway": {
+        "en": "Ocean Blue / Black",
+        "zh": "海洋蓝/黑"
+      },
+      "family": "blue",
+      "image": "img/products/cw01.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW02",
+      "sku": "TODO-SKU-02",
+      "colorway": {
+        "en": "Olive / Sail",
+        "zh": "橄榄绿/米白"
+      },
+      "family": "green",
+      "image": "img/products/cw02.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW03",
+      "sku": "TODO-SKU-03",
+      "colorway": {
+        "en": "Sand / Cream",
+        "zh": "沙色/奶白"
+      },
+      "family": "neutral",
+      "image": "img/products/cw03.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW04",
+      "sku": "TODO-SKU-04",
+      "colorway": {
+        "en": "Stone Grey",
+        "zh": "石灰色"
+      },
+      "family": "grey",
+      "image": "img/products/cw04.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW05",
+      "sku": "TODO-SKU-05",
+      "colorway": {
+        "en": "Silver Grey",
+        "zh": "银灰"
+      },
+      "family": "grey",
+      "image": "img/products/cw05.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW06",
+      "sku": "TODO-SKU-06",
+      "colorway": {
+        "en": "Volt / Grey",
+        "zh": "荧光绿/灰"
+      },
+      "family": "green",
+      "image": "img/products/cw06.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW07",
+      "sku": "TODO-SKU-07",
+      "colorway": {
+        "en": "White / Royal Blue",
+        "zh": "白/宝蓝"
+      },
+      "family": "blue",
+      "image": "img/products/cw07.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW08",
+      "sku": "TODO-SKU-08",
+      "colorway": {
+        "en": "Denim Blue",
+        "zh": "牛仔蓝"
+      },
+      "family": "blue",
+      "image": "img/products/cw08.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW09",
+      "sku": "TODO-SKU-09",
+      "colorway": {
+        "en": "Cloud White",
+        "zh": "云白"
+      },
+      "family": "white",
+      "image": "img/products/cw09.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW10",
+      "sku": "TODO-SKU-10",
+      "colorway": {
+        "en": "Neon Green / Black",
+        "zh": "霓虹绿/黑"
+      },
+      "family": "green",
+      "image": "img/products/cw10.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW11",
+      "sku": "TODO-SKU-11",
+      "colorway": {
+        "en": "Midnight Navy",
+        "zh": "午夜藏青"
+      },
+      "family": "blue",
+      "image": "img/products/cw11.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW12",
+      "sku": "TODO-SKU-12",
+      "colorway": {
+        "en": "Triple Black",
+        "zh": "全黑"
+      },
+      "family": "black",
+      "image": "img/products/cw12.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW13",
+      "sku": "TODO-SKU-13",
+      "colorway": {
+        "en": "Black / Grey / White",
+        "zh": "黑/灰/白"
+      },
+      "family": "black",
+      "image": "img/products/cw13.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW14",
+      "sku": "TODO-SKU-14",
+      "colorway": {
+        "en": "Mocha Brown",
+        "zh": "摩卡棕"
+      },
+      "family": "neutral",
+      "image": "img/products/cw14.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW15",
+      "sku": "TODO-SKU-15",
+      "colorway": {
+        "en": "Black / White",
+        "zh": "黑白"
+      },
+      "family": "black",
+      "image": "img/products/cw15.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW16",
+      "sku": "TODO-SKU-16",
+      "colorway": {
+        "en": "Taupe / Black",
+        "zh": "灰褐/黑"
+      },
+      "family": "neutral",
+      "image": "img/products/cw16.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW17",
+      "sku": "TODO-SKU-17",
+      "colorway": {
+        "en": "Black / Red",
+        "zh": "黑红"
+      },
+      "family": "red",
+      "image": "img/products/cw17.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW18",
+      "sku": "TODO-SKU-18",
+      "colorway": {
+        "en": "White / Teal",
+        "zh": "白/青绿"
+      },
+      "family": "white",
+      "image": "img/products/cw18.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW19",
+      "sku": "TODO-SKU-19",
+      "colorway": {
+        "en": "White / Navy",
+        "zh": "白/藏青"
+      },
+      "family": "white",
+      "image": "img/products/cw19.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW20",
+      "sku": "TODO-SKU-20",
+      "colorway": {
+        "en": "Black / Gold",
+        "zh": "黑金"
+      },
+      "family": "black",
+      "image": "img/products/cw20.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    },
+    {
+      "id": "CW21",
+      "sku": "TODO-SKU-21",
+      "colorway": {
+        "en": "Latte Tan",
+        "zh": "拿铁棕"
+      },
+      "family": "neutral",
+      "image": "img/products/cw21.jpg",
+      "price": null,
+      "examplePrice": 59,
+      "compareAt": null,
+      "sizes": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10",
+        "US 11"
+      ],
+      "stock": null,
+      "available": true
+    }
+  ]
+}

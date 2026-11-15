@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Welleast Studio — Chunky Runner, 21 Colorways</title>
+<meta name="description" content="Chunky cushioned runners in 21 colorways. Limited stock, shipped from New York. Inquire to order.">
+<meta property="og:title" content="Welleast Studio — Chunky Runner">
+<meta property="og:description" content="21 colorways. Limited stock. Ships from New York.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="preview-bar" data-i18n="previewBar">Preview store · Prices shown are examples · Orders are inquiries — no payment is taken on this site</div>
+<header class="nav">
+  <a class="brand" href="#top"><span class="dot"></span>Welleast Studio</a>
+  <nav class="nav-links">
+    <a href="#shop" data-i18n="navShop">Shop</a>
+    <a href="#details" data-i18n="navDetails">Details</a>
+    <a href="#order" data-i18n="navOrder">Order</a>
+    <button id="langBtn" class="lang" aria-label="Switch language">中文</button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow gradient-text" data-i18n="eyebrow">New season · Limited stock</p>
+      <h1 data-i18n="heroTitle">Chunky Runner.<br>21 colorways.</h1>
+      <p class="lead" data-i18n="heroLead">A sculpted, cushioned sole and breathable mesh upper. Pick your colorway, tell us your size, and we'll confirm availability.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#shop" data-i18n="ctaShop">Browse colorways</a>
+        <a class="btn ghost" href="#order" data-i18n="ctaOrder">Send an inquiry</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="glow"></div>
+      <img src="img/hero.jpg" alt="Chunky Runner lineup on an acrylic display shelf" width="864" height="962">
+    </div>
+  </section>
+
+  <section id="shop" class="shop">
+    <div class="section-head">
+      <h2 data-i18n="shopTitle">Choose your colorway</h2>
+      <p class="muted" data-i18n="shopSub">Tap a shoe to select it. Images are AI-enhanced renders of the lineup; actual product may vary slightly.</p>
+    </div>
+    <div class="chips" id="chips" role="tablist"></div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </section>
+
+  <section id="details" class="details">
+    <div class="detail-card"><div class="icon">◎</div><h3 data-i18n="d1t">Sculpted sole</h3><p data-i18n="d1p">Chunky, cut-out midsole for a bold silhouette.</p></div>
+    <div class="detail-card"><div class="icon">≋</div><h3 data-i18n="d2t">Mesh upper</h3><p data-i18n="d2p">Layered mesh and overlays. Full materials list: to be confirmed.</p></div>
+    <div class="detail-card"><div class="icon">⌂</div><h3 data-i18n="d3t">Ships from NYC</h3><p id="shipNote">Ships from New York.</p></div>
+  </section>
+
+  <section id="order" class="order">
+    <div class="order-card">
+      <h2 data-i18n="orderTitle">Order inquiry</h2>
+      <p class="muted" data-i18n="orderSub">No payment is collected here. We'll reply to confirm size, stock, final price and shipping.</p>
+      <form id="orderForm" novalidate>
+        <label><span data-i18n="fColor">Colorway</span><select name="colorway" id="fColorway" required></select></label>
+        <div class="row">
+          <label><span data-i18n="fSize">Size</span><select name="size" id="fSize" required></select></label>
+          <label><span data-i18n="fQty">Quantity</span><input name="quantity" type="number" min="1" max="500" value="1" required></label>
+        </div>
+        <label><span data-i18n="fName">Name</span><input name="name" autocomplete="name" required></label>
+        <label><span data-i18n="fEmail">Email</span><input name="email" type="email" autocomplete="email" required></label>
+        <label><span data-i18n="fPhone">Phone / WeChat (optional)</span><input name="contact" autocomplete="tel"></label>
+        <label><span data-i18n="fNote">Notes (wholesale? pickup in NYC?)</span><textarea name="message" rows="3"></textarea></label>
+        <button class="btn primary wide" type="submit" data-i18n="fSubmit">Send inquiry</button>
+        <p id="formStatus" class="status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="yr"></span> Welleast Studio</p>
+  <p class="muted small" data-i18n="footNote">Unbranded footwear. Not affiliated with or endorsed by any other brand. Prices marked "Example price" are placeholders.</p>
+</footer>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <button class="close" id="sheetClose" aria-label="Close">×</button>
+    <img id="sheetImg" alt="">
+    <h3 id="sheetTitle"></h3>
+    <p id="sheetPrice" class="price"></p>
+    <div id="sheetSizes" class="sizes"></div>
+    <button class="btn primary wide" id="sheetOrder" data-i18n="selectOrder">Select & order</button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
